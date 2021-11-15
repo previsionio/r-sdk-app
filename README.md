@@ -6,3 +6,5 @@ Please use this repository as a boilerplate for the R SDK tutorial available on 
 This repo contains 2 important files :
 - app.R : the source code of the shiny application
 - packages.txt : list of packages that are required by the application
+
+Note that this code is made to work on the 11.3.1 version of Prevision.io
