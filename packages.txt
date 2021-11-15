@@ -1,0 +1,10 @@
+r = getOption("repos")
+options(Ncpus = 4)
+r["CRAN"] = "http://cran.irsn.fr/"
+options(repos = r)
+install.packages("plotly")
+install.packages("Metrics")
+install.packages("lubridate")
+install.packages("data.table")
+install.packages("previsionio")
+install.packages("shinydashboard")
