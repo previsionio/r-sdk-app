@@ -46,14 +46,12 @@ load_data = function() {
   # RETRIEVING DATA FROM THE "VALID" DATASET
   test_id = get_dataset_id_from_name(project_id = get_project_id_from_name("Electricity Forecast"),
                                      dataset_name = "valid")
-  test = create_dataframe_from_dataset(dataset_id = test_id,
-                                       path = tempdir())
+  test = create_dataframe_from_dataset(dataset_id = test_id)
   
   # RETRIEVING PREDICTIONS FROM DEPLOYED MODEL
   pred_id = get_dataset_id_from_name(project_id = get_project_id_from_name("Electricity Forecast"),
                                      dataset_name = "prediction_pipeline_sdk")
-  pred = create_dataframe_from_dataset(dataset_id = pred_id,
-                                       path = tempdir())
+  pred = create_dataframe_from_dataset(dataset_id = pred_id)
   
   test$pred = pred$pred_TARGET
   
